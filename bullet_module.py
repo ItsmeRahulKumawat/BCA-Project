@@ -7,7 +7,7 @@ class Bullet(Sprite):
     """a class to manage bullets fired from the rocket"""
     def __init__(self, setting_obj, screen, rocket):
         # create a bullet object from rocket current position
-        super().__init__()
+        super(Bullet, self).__init__()
         self.screen = screen
 
         # create a bullet

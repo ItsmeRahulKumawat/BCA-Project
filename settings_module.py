@@ -16,8 +16,8 @@ class Settings():
         self.rocket_limit = 3
 
         # Bullet settings
-        self.bullet_speed_factor = 5
-        self.bullet_width = 3
+        self.bullet_speed_factor = 1
+        self.bullet_width = 1500
         self.bullet_height = 20
         self.bullet_color = 60, 60, 60
         self.bullets_allowed = 5

@@ -14,7 +14,7 @@ def run_game():
     setting_obj = Settings()
 
     screen = pygame.display.set_mode((setting_obj.screenwidth,setting_obj.screenheight))
-    pygame.display.set_caption("Space Attack")
+    pygame.display.set_caption("Alien Forces")
 
     # Make a rocket, a group of bullets, and a group of aliens.
     rocket = Rocket(setting_obj, screen)

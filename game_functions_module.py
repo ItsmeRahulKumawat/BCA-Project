@@ -9,7 +9,7 @@ from time import sleep
 
 
 def check_keydown_evnets(event, stat_obj, setting_obj, screen, rocket, bullet_inst):
-    """This part works when right arrow key is pressed"""
+    """This part works when any kinds of user input is given through keyboard"""
     if event.key == pygame.K_RIGHT:
         rocket.moving_right = True
     elif event.key == pygame.K_LEFT:
@@ -23,13 +23,14 @@ def check_keydown_evnets(event, stat_obj, setting_obj, screen, rocket, bullet_in
 
 
 def check_keyup_events(event, rocket):
-    """This part works when right arrow key is released"""
+    """This part works key is released"""
     if event.key == pygame.K_RIGHT:
         rocket.moving_right = False
     elif event.key == pygame.K_LEFT:
         rocket.moving_left = False
 
 def check_events(setting_obj, screen, stat_obj, scoreboard_obj, play_btn, alien_inst, rocket, bullet_inst):
+    """This part works when any event occurs"""
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             sys.exit()
